@@ -1,0 +1,182 @@
+@mixin border_bot
+    border-top: none 
+    border-right: none 
+    border-left: none 
+@mixin all_color
+    &_green
+        color: $green
+        border: 2px solid $green
+        &:hover
+            color: $green
+        &.bn
+            border: none 
+        &.bb
+            @include border_bot
+        &.bgc
+            background-color: $bgGreen
+            transition: 0.4s all
+            &:hover
+                background-color: $green
+                color: white
+    &_purple
+        color: $purple
+        border: 2px solid $purple
+        &:hover
+            color: $purple
+        &.bn
+            border: none 
+        &.bb
+            @include border_bot
+        &.bgc
+            background-color: $bgPurple
+            transition: 0.4s all
+            &:hover
+                background-color: $purple
+                color: white
+    &_orange
+        color: $orange
+        border: 2px solid $orange
+        &:hover
+            color: $orange
+        &.bn
+            border: none 
+        &.bb
+            @include border_bot
+        &.bgc
+            background-color: $bgOrange
+            transition: 0.4s all
+            &:hover
+                background-color: $orange
+                color: white
+    &_red
+        color: $red
+        border: 2px solid $red
+        &:hover
+            color: $red
+        &.bn
+            border: none 
+        &.bb
+            @include border_bot
+        &.bgc
+            background-color: $bgRed
+            transition: 0.4s all
+            &:hover
+                background-color: $red
+                color: white
+@mixin gpo_color
+    &_green
+        color: $green
+        border: 2px solid $green
+        &:hover
+            color: $green
+        &.bn
+            border: none 
+        &.bb
+            @include border_bot
+        &.bgc
+            background-color: $bgGreen
+            transition: 0.4s all
+            &:hover
+                background-color: $green
+                color: white
+    &_purple
+        color: $purple
+        border: 2px solid $purple
+        &:hover
+            color: $purple
+        &.bn
+            border: none 
+        &.bb
+            @include border_bot
+        &.bgc
+            background-color: $bgPurple
+            transition: 0.4s all
+            &:hover
+                background-color: $purple
+                color: white
+    &_orange
+        color: $orange
+        border: 2px solid $orange
+        &:hover
+            color: $orange
+        &.bn
+            border: none 
+        &.bb
+            @include border_bot
+        &.bgc
+            background-color: $bgOrange
+            transition: 0.4s all
+            &:hover
+                background-color: $orange
+                color: white
+@mixin grp_color
+    &_green
+        color: $green
+        border: 2px solid $green
+        &:hover
+            color: $green
+        &.bn
+            border: none 
+        &.bb
+            @include border_bot
+        &.bgc
+            background-color: $bgGreen
+            transition: 0.4s all
+            &:hover
+                background-color: $green
+                color: white
+    &_purple
+        color: $purple
+        border: 2px solid $purple
+        &:hover
+            color: $purple
+        &.bn
+            border: none 
+        &.bb
+            @include border_bot
+        &.bgc
+            background-color: $bgPurple
+            transition: 0.4s all
+            &:hover
+                background-color: $purple
+                color: white
+    &_red
+        color: $red
+        border: 2px solid $red
+        &:hover
+            color: $red
+        &.bn
+            border: none 
+        &.bb
+            @include border_bot
+        &.bgc
+            background-color: $bgRed
+            transition: 0.4s all
+            &:hover
+                background-color: $red
+                color: white
+@mixin bgColor
+    &_green
+        background-color: $green
+        border: 2px solid $green
+    &_purple
+        background-color: $purple
+        border: 2px solid $purple
+    &_orange
+        background-color: $orange
+        border: 2px solid $orange
+    &_red
+        background-color: $red
+        border: 2px solid $red
+    &.tw
+        color: white
+
+
+$green: #39b88d
+$purple: #b27cf5
+$orange: #feb960
+$red: #fc5f45
+$bgRed: #fc604550
+$bgOrange: #feba6042
+$bgPurple: #b27cf542
+$bgGreen: #39b88e42

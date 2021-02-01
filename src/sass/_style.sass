@@ -1,0 +1,756 @@
+.label
+    font-family: "Poppins"
+    text-align: center
+    &__title
+        font-family: "Roboto"
+        font-size: 50px
+        text-transform: uppercase
+        &.tal
+            text-align: left
+    &__desc
+        margin-top: 15px
+        font-size: 15px
+        font-family: "Poppins"
+        color: rgb(97, 97, 97)
+        line-height: 1.8
+        text-align: center
+        &.tw
+            color: white
+        &.tal
+            text-align: left
+.circle
+    margin: 0 auto
+    width: 15px
+    height: 15px
+    border-radius: 100%
+    display: flex
+    justify-content: space-around
+    align-items: center
+    @include all_color
+    &__bg
+        border-radius: 100%
+        width: 70%
+        height: 70%
+        @include bgColor
+
+header
+    padding: 5px 0px 10px 0px 
+    position: fixed
+    top: 0
+    background: white
+    width: 100%
+    z-index: 100
+    border-bottom: 1px solid rgba(0, 0, 0, .2) 
+    .logo
+        height: 100%
+        display: flex
+        align-items: center
+        & a
+            color: black
+            text-decoration: none
+            font-weight: bold
+            text-transform: uppercase
+            transition: 0.3s color
+            &:hover
+                text-decoration: none 
+                color: #40ca9c
+    .menu
+        padding: 0
+        margin: 0
+        margin-top: 1px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &__item
+            font-size: 16px
+            font-family: "Poppins"
+            font-weight: bold
+            &:first-child
+                margin-left: 0
+        &__link
+            color: black
+            text-transform: none
+            transition: 0.3s all
+            &:hover
+                text-decoration: none
+                color: #ff5537
+.promo
+    padding: 180px 0
+    min-height: 780px
+    background-color: #3f4049
+    &__title
+        text-transform: uppercase
+        width: 80%
+        display: block
+        margin: 0 auto
+        font-size: 60px
+        font-family: "Roboto"
+        color: rgb(255, 255, 255)
+        text-align: center
+    &__btn
+        font-size: 16px
+        font-family: "Poppins"
+        color: $red
+        font-weight: bold
+        text-transform: uppercase
+        display: block
+        margin: 0 auto
+        margin-top: 50px
+        background-color: $bgRed
+        width: 180px
+        height: 50px
+        border: 2px solid $red
+        border-radius: 25px 
+        transition: 0.4s all
+        &:hover
+            background-color: $red
+            color: white
+    &__items
+        text-align: center
+        margin-top: 83px
+        display: flex
+        justify-content: space-around
+    &__item
+        border: none           
+        font-family: "Poppins"
+        font-weight: lighter
+        text-transform: uppercase
+        @include gpo_color
+        & h2 
+            font-weight: normal
+            margin-top: 30px
+            font-size: 26px
+    &__circle
+        margin: 0 auto
+        height: 40px
+        width: 40px
+        border-radius: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        @include all_color
+        & span
+            font-size: 22px
+.about  
+    padding: 150px 0 155px 0
+    min-height: 1005px
+    &__content
+        position: relative
+    &__img
+        height: 700px
+        width: 555px
+        border: 10px solid #9a908e
+        background-color: #c4c2c2
+    &__desc
+        padding: 100px 90px 110px 80px
+        margin-top: 6%
+        position: absolute
+        background-color: #fff
+        box-shadow: 3px -3px 10px rgba(0,0,0,0.2); 
+        height: 78%
+.focus
+    min-height: 830px
+    padding: 160px 0 150px 0
+    background-color: #f7f7f7
+    &__items
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        margin-top: 80px
+    &__item
+        padding: 65px 25px
+        text-align: center
+        background-color: #ffffff  
+        @include all_color       
+        @include border_bot
+        width: 250px
+        height: 370px
+        box-shadow: 0px 0px 15px rgba(0,0,0,0.2) 
+        font-family: "Poppins"
+    &__icon
+        font-size: 60px
+        @include all_color
+    &__title          
+        font-size: 18px
+        color: rgb(49, 49, 49)
+        font-weight: bold
+        margin-top: 10px
+    &__desc
+        margin-top: 20px
+        font-size: 15px
+        color: rgb(97, 97, 97)
+        line-height: 21px
+.video
+    padding: 150px 0 155px 0
+    min-height: 500px
+    background-color: #3f4049
+    text-align: center
+    font-family: "Poppins"
+    &__title
+        font-weight: normal
+        font-size: 30px
+        color: rgb(255, 255, 255)
+    &__btn
+        margin-top: 35px
+        background-color: #3f4049
+        &_green
+            color: $green
+        & span
+            font-size: 80px
+            border: none
+    &__desc
+        margin-top: 40px
+        font-size: 15px;
+        color: rgb(255, 255, 255);
+.portfolio
+    padding: 150px 0
+    min-height: 1390px
+    &__items 
+        margin-top: 80px
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+    &__item
+        margin-bottom: 10px
+        background-color: black
+        width: 360px
+        height: 290px 
+.team
+    min-height: 1235px
+    background-color: #f7f7f7
+    padding: 185px 0 150px 0
+    .team-item
+        &__about
+            display: none
+        &__share
+            display: none
+    &__items
+        margin-top: 40px
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+    &__item
+        padding: 5px 5px 0 5px
+        width: 273px
+        height: 365px
+        background-color: #fff
+        box-shadow: 0px 0px 15px rgba(0,0,0,0.2) 
+        text-align: center
+        font-family: "Poppins"
+        @include all_color
+        & img
+            width: 263px
+            height: 270px
+            background-color: black
+        &__title
+            margin-top: 20px
+            font-size: 18px
+        &__desc
+            font-size: 13px
+            color: rgb(97, 97, 97)
+    &__about
+        margin-top: 50px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 75px 100px 80px 100px
+        min-height: 350px
+        background-color: #fff
+        box-shadow: 0px 0px 40px rgba(0,0,0,0.15) 
+        &__item
+            font-family: "Poppins"
+            &:first-child
+                width: 650px
+            &:last-child
+                width: 200px
+                display: flex
+                align-items: center
+                justify-content: space-between  
+        &__desc
+            font-size: 15px          
+            color: rgb(97, 97, 97)
+            line-height: 1.8
+        &__title
+            font-size: 20px
+            color: rgb(39, 39, 39)
+        &__border
+            padding-left: 25px 
+            border-left: 2px solid #efefef
+        & a
+            margin-top: 2px
+            display: block
+            text-decoration: none
+            color: #616161
+            &:hover
+                text-decoration: none
+        &__square
+            display: inline-block              
+            & div
+                height: 25px
+                width: 25px      
+                border-radius: 5px       
+                background-color: #616161
+                display: flex
+                justify-content: center
+                align-items: center
+                & span     
+                    text-align: center
+                    color: #ffffff
+        &__share
+            display: inline
+            color: $orange
+            height: 80px
+            width: 10px
+            font-size: 30px
+            text-align: right
+.statistics
+    background-image: url("../img/statistics/bg.png")
+    height: 465px
+    padding: 145px 0 125px 0
+    &__items
+        display: flex
+        justify-content: space-around
+        align-items: center
+        text-align: center
+    &__item
+        border: none
+        font-family: "Poppins"
+        @include all_color
+    &__icon
+        font-size: 50px
+    &__count
+        margin-top: 10px
+        font-size: 20px           
+        color: rgb(254, 254, 254)
+    &__title
+        margin-top: 25px
+        font-size: 15px
+        font-weight: normal
+        color: rgba(254, 254, 254, 0.702)
+    &__circle
+        margin-top: 25px
+.steps
+    height: 1730px
+    padding: 150px 0
+    &__content
+        margin-top: 75px
+        position: relative
+    &__item
+        box-shadow: 0px 0 10px rgba(0,0,0,.2)
+        height: 300px
+        padding: 80px 60px 50px 125px
+        font-family: "Poppins"
+        text-align: left
+        background-color: #fff
+        z-index: 2
+        @include all_color
+    &__desc
+        font-size: 15px
+        color: rgb(97, 97, 97)
+        line-height: 1.8
+    &__title
+        font-size: 25px
+        font-weight: medium
+        color: rgb(39, 39, 39)
+    &__block
+        position: absolute
+        top: 50px
+        left: 20%
+        z-index: -1
+    &__img
+        width: 556px
+        height: 300px
+        background-color: #353232b2
+        border: 1px solid $orange
+.price
+    min-height: 1050px
+    padding: 155px 0 155px 0
+    background-color: #f7f7f7
+    &__items
+        margin-top: 70px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &__item
+        min-height: 575px
+        width: 360px
+        padding: 35px 80px
+        text-align: center
+        font-family: "Poppins"
+        border-right: none
+        border-left: none
+        border-bottom: none
+        box-shadow: 0 0 10px rgba(0, 0, 0,.2 )
+        @include grp_color
+    &__title
+        font-size: 20px
+        font-weight: medium
+        color: rgb(49, 49, 49)
+    &__btn
+        text-transform: uppercase
+        width: 180px
+        height: 50px
+        border-radius: 35px
+        margin-top: 40px
+        @include all_color
+    &__desc
+        margin-top: 40px
+        font-size: 15px
+        color: rgb(39, 39, 39)
+        line-height: 2.667
+    &__circle
+        margin: 0 auto
+        margin-top: 30px
+        height: 115px
+        width: 115px
+        background-color: #fff
+        border-radius: 100%
+        display: flex
+        justify-content: space-around
+        align-items: center
+        @include all_color
+    &__cost
+        border-radius: 100%
+        height: 95%
+        width: 95%
+        display: flex
+        align-items: center
+        justify-content: center
+        font-size: 25px
+        line-height: 15px
+        @include bgColor
+        & span           
+            font-size: 15px
+.response
+    background-color: #3f4049
+    height: 875px
+    padding: 150px 0px
+    &__items
+        margin-top: 40px
+        height: 399px
+        display: flex
+        justify-content: center
+    &__item
+        &:first-child
+            background-color: #c4c3c3
+            width: 384px
+            border: 10px solid #a2a2a2
+    &__inf
+        min-height: 320px
+        width: 760px
+        padding: 60px 65px 40px 55px
+        font-family: "Poppins"
+        @include border_bot
+        border-width: 5px
+        background-color: #fff
+    &__desc 
+        font-size: 15px
+        color: rgb(97, 97, 97)
+        line-height: 1.8
+    &__personal
+        margin-top: 30px
+        font-family: "Poppins"
+    &__signature
+        display: inline-block
+        font-size: 30px
+        font-family: "Sacramento"
+        color: rgb(39, 39, 39)
+        text-align: left
+        line-height: 40px
+        margin-bottom: 10px
+    &__fn
+        font-weight: bold
+        font-size: 18px
+        color: rgb(39, 39, 39)
+    &__city
+        font-size: 19px
+        color: rgb(252, 95, 69)
+    .content
+        height: 399px
+        display: flex
+        align-items: center
+        position: relative
+    .circles
+        width: 145px
+        display: flex
+        justify-content: space-between
+        position: absolute
+        right: 10px
+        bottom: 0px
+        & button
+            background-color: rgba(0,0,0,0)
+        & .circle
+            margin: 0
+            width: 15px
+            height: 15px
+            border: 2px solid white
+            &_red
+                border: 2px solid $red
+.advantage
+    height: 1150px
+    padding: 145px 0 150px 0
+    &__items
+        margin-top: 85px
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+    &__item
+        padding: 20px
+        margin-bottom: 55px
+        width: 310px
+        min-height: 140px
+        text-align: left
+        font-family: "Poppins"
+        box-shadow: 0 0 15px rgba(0,0 ,0 ,.2 )
+    &__header
+        display: flex
+        align-items: center
+    &__icon
+        border: none
+        font-size: 35px
+        @include all_color
+    &__title    
+        margin-left: 10px                           
+        font-size: 18px
+        font-weight: medium
+        color: rgb(39, 39, 39)
+    &__desc
+        font-size: 15px
+        color: rgb(97, 97, 97)
+        line-height: 1.8
+    &__start
+        margin-top: 80px
+        font-family: "Poppins"
+        text-align: center
+        &__desc
+            font-size: 25px
+            color: rgb(39, 39, 39)
+        &__btn
+            display: inline-block
+            margin-left: 20px
+            font-weight: bold
+            border-radius: 30px
+            width: 180px
+            height: 55px
+            &_red
+                color: $red
+                border: 2px solid $bgRed
+                background-color: $bgRed
+                transition: 0.4s all
+                &:hover
+                    background-color: $red
+                    color: white
+.blog
+    padding: 150px 0
+    height: 1600px   
+    background-color: #f7f7f7       
+    &__items 
+        margin-top: 75px
+        height: 685px
+        display: flex
+        justify-content: space-between
+    &__item
+        width: 500px
+        &:last-child
+            width: 585px
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+        &:first-child
+            box-shadow: 0 0 10px rgba(0, 0, 0, .2)
+            border-bottom: 2px solid $red
+    &__img
+        height: 443px
+        width: 100%
+        background-color: #929292
+        position: relative
+    &__insc
+        position: absolute
+        bottom: 35px
+        left: 50px
+        font-family: "Poppins"
+        font-size: 14px
+        vertical-align: medium
+        color: rgba(255, 255, 255, 0.702)
+        & span
+            font-weight: bolder
+            text-transform: uppercase 
+            font-size: 16px
+            color: $red
+            margin-right: 20px
+    &__picture
+        font-family: "Poppins"
+        padding: 50px 55px 45px 55px
+        &__title
+            font-size: 20px
+            color: rgb(39, 39, 39)
+            text-align: left
+        &__desc
+            font-size: 15px
+            color: rgb(97, 97, 97)
+            line-height: 1.8
+            text-align: left
+            & a 
+                color: #353535
+                font-weight: bold
+                &:hover
+                    text-decoration: none
+    &__inf
+        padding: 35px 50px 35px 40px
+        box-shadow: 0 0 10px rgba(0, 0, 0, .2)
+        height: 210px
+        font-family: "Poppins"
+        @include gpo_color
+    &__header
+        font-size: 13px
+        color: rgb(97, 97, 97)
+    &__data
+        @include gpo_color
+        & span
+            margin-right: 20px
+            font-size: 15px
+            font-family: "Poppins"
+            font-weight: bold
+            text-transform: uppercase
+    &__title
+        font-size: 18px
+        color: rgb(39, 39, 39)
+        line-height: 1.944
+        text-align: left
+    &__desc
+        font-size: 15px
+        color: rgb(97, 97, 97)
+        line-height: 1.8
+    &__link
+        font-weight: bold
+        @include all_color
+        &:hover
+            text-decoration: none
+    &-subscribe
+        margin-top: 155px
+        text-align: center
+        padding: 150px 0px
+        background-color: #fff
+        height: 450px
+        &__title
+            font-size: 30px
+            font-family: "Poppins"
+            color: rgb(39, 39, 39)
+        &__form
+            margin-top: 50px
+            display: flex
+            justify-content: center
+            font-family: "Poppins"
+            font-size: 16px
+            & input
+                border: 2px solid #efefef
+                border-right: none
+                border-top-left-radius: 30px
+                border-bottom-left-radius: 30px
+                padding-left: 30px
+                width: 300px
+                margin: 0
+                height: 50px
+                background-color: #f7f7f7
+                color: rgb(97, 97, 97)
+                &:-webkit-autofill 
+                    -webkit-box-shadow: 0 0 0px 1000px #f7f7f7 inset
+                    -webkit-text-fill-color: rgb(97, 97, 97) !important
+                    color: rgb(97, 97, 97) !important
+                    font-size: 16px
+            & button
+                border-top-right-radius: 30px
+                border-bottom-right-radius: 30px
+                width: 180px
+                height: 50px
+                margin: 0
+                padding: 0
+                color: $red
+                border: 2px solid $bgRed
+                background-color: $bgRed
+                font-weight: bold
+                text-transform: uppercase
+                transition: 0.4s all
+                &:hover
+                    border: 2px solid $red
+                    background-color: $red
+                    color: white
+footer
+    height: 1280px
+    background-color: #cccccc
+    padding: 155px 0 130px 0
+    & .footer
+        &__form
+        padding: 0 180px
+        margin-top: 80px
+        font-family: "Poppins"
+        &__inputs
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            & input
+                padding-left: 15px
+                margin-bottom: 25px
+                width: 48% 
+                height: 50px
+                border: 1px solid #efefef
+                border-radius: 5px
+            & textarea
+                margin-bottom: 0px
+                height: 200px
+                width: 100%
+                border: 1px solid #efefef
+                border-radius: 5px
+                resize: none
+                outline: none
+                &:focus
+                    outline: none
+        &__btn 
+            display: block
+            margin: 0 auto
+            margin-top: 55px
+            width: 190px
+            height: 50px
+            border-radius: 30px
+            font-size: 16px
+            font-weight: bold
+            text-transform: uppercase
+            background-color: $bgRed
+            color: $red
+            transition: 0.4s all
+            &:hover
+                background-color: $red
+                color: white
+        &__inf
+            margin-top: 150px
+            width: 100%
+            background-color: #3f4049
+            height: 225px
+        &__item   
+            font-family: "Poppins"  
+            padding: 65px 40px 65px 50px        
+            border-width: 2px
+            height: 100%
+            @include all_color
+        &__title
+            border: none
+            font-size: 18px
+        &__desc
+            font-size: 18px
+            color: #fef4f2
+            line-height: 1.5
+            &:first-child
+                display: flex
+                align-items: center
+
+        &__social                      
+            font-size: 25px
+            margin-top: 10px
+            & a
+                display: inline-block
+                text-decoration: none
+                color: #e5e6e7
+        &__logo
+            font-size: 50px
+            color: #fef4f2
