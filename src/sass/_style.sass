@@ -676,81 +676,79 @@ header
                     border: 2px solid $red
                     background-color: $red
                     color: white
-footer
+.footer
     height: 1280px
     background-color: #cccccc
     padding: 155px 0 130px 0
-    & .footer
-        &__form
+    &__form
         padding: 0 180px
         margin-top: 80px
         font-family: "Poppins"
-        &__inputs
-            display: flex
-            flex-wrap: wrap
-            justify-content: space-between
-            & input
-                padding-left: 15px
-                margin-bottom: 25px
-                width: 48% 
-                height: 50px
-                border: 1px solid #efefef
-                border-radius: 5px
-            & textarea
-                margin-bottom: 0px
-                height: 200px
-                width: 100%
-                border: 1px solid #efefef
-                border-radius: 5px
-                resize: none
-                outline: none
-                &:focus
-                    outline: none
-        &__btn 
-            display: block
-            margin: 0 auto
-            margin-top: 55px
-            width: 190px
+    &__inputs
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        & input
+            padding-left: 15px
+            margin-bottom: 25px
+            width: 48% 
             height: 50px
-            border-radius: 30px
-            font-size: 16px
-            font-weight: bold
-            text-transform: uppercase
-            background-color: $bgRed
-            color: $red
-            transition: 0.4s all
-            &:hover
-                background-color: $red
-                color: white
-        &__inf
-            margin-top: 150px
+            border: 1px solid #efefef
+            border-radius: 5px
+        & textarea
+            margin-bottom: 0px
+            height: 200px
             width: 100%
-            background-color: #3f4049
-            height: 225px
-        &__item   
-            font-family: "Poppins"  
-            padding: 65px 40px 65px 50px        
-            border-width: 2px
-            height: 100%
-            @include all_color
-        &__title
-            border: none
-            font-size: 18px
-        &__desc
-            font-size: 18px
-            color: #fef4f2
-            line-height: 1.5
-            &:first-child
-                display: flex
-                align-items: center
-
-        &__social                      
-            font-size: 25px
-            margin-top: 10px
-            & a
-                display: inline-block
-                text-decoration: none
-                color: #e5e6e7
-        &__logo
-            font-size: 50px
-            color: #fef4f2
+            border: 1px solid #efefef
+            border-radius: 5px
+            resize: none
+            outline: none
+            &:focus
+                outline: none
+    &__btn 
+        display: block
+        margin: 0 auto
+        margin-top: 55px
+        width: 190px
+        height: 50px
+        border-radius: 30px
+        font-size: 16px
+        font-weight: bold
+        text-transform: uppercase
+        background-color: $bgRed
+        color: $red
+        transition: 0.4s all
+        &:hover
+            background-color: $red
+            color: white
+    &__inf
+        margin-top: 150px
+        width: 100%
+        background-color: #3f4049
+        height: 225px
+    &__item   
+        font-family: "Poppins"  
+        padding: 65px 40px 65px 50px        
+        border-width: 2px
+        height: 100%
+        @include all_color
+    &__title
+        border: none
+        font-size: 18px
+    &__desc
+        font-size: 18px
+        color: #fef4f2
+        line-height: 1.5
+        &:first-child
+            display: flex
+            align-items: center
+    &__social                      
+        font-size: 25px
+        margin-top: 10px
+        & a
+            display: inline-block
+            text-decoration: none
+            color: #e5e6e7
+    &__logo
+        font-size: 50px
+        color: #fef4f2
