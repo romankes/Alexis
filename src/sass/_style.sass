@@ -60,6 +60,8 @@ header
                     text-decoration: none 
                     color: #40ca9c
                     transition: 0.3s color
+                &.active
+                    color: #40ca9c
         &__item
             font-size: 13px
             font-family: "Poppins"
@@ -70,6 +72,8 @@ header
             transition: 0.3s all
             &:hover
                 text-decoration: none
+                color: #ff5537
+            &.active
                 color: #ff5537
 .promo
     padding: 180px 0
@@ -129,6 +133,7 @@ header
         & span
             font-size: 22px
 .about  
+    background-color: #fff
     padding: 150px 0 155px 0
     min-height: 1005px
     &__content
@@ -147,7 +152,7 @@ header
         height: 78%
 .focus
     min-height: 830px
-    padding: 160px 0 150px 0
+    padding: 160px 0 0px 0
     background-color: #f7f7f7
     &__items
         display: flex
@@ -178,8 +183,9 @@ header
         color: rgb(97, 97, 97)
         line-height: 21px
 .video
-    padding: 150px 0 155px 0
+    padding: 150px 0 0 0
     min-height: 500px
+    margin-top: 155px
     background-color: #3f4049
     text-align: center
     font-family: "Poppins"
@@ -200,6 +206,7 @@ header
         font-size: 15px;
         color: rgb(255, 255, 255);
 .portfolio
+    background-color: #fff
     padding: 150px 0
     min-height: 1390px
     &__items 
@@ -215,7 +222,7 @@ header
 .team
     min-height: 1235px
     background-color: #f7f7f7
-    padding: 185px 0 150px 0
+    padding: 185px 0 0 0
     .team-item
         &__about
             display: none
@@ -227,7 +234,8 @@ header
         justify-content: space-around
         flex-wrap: wrap
     &__item
-        padding: 5px 5px 0 5px
+        padding: 5px 0 0 0
+        text-align: center
         width: 273px
         height: 365px
         background-color: #fff
@@ -235,6 +243,8 @@ header
         text-align: center
         font-family: "Poppins"
         @include all_color
+        &.active
+            border-width: 3px
         & img
             width: 263px
             height: 270px
@@ -247,13 +257,15 @@ header
             color: rgb(97, 97, 97)
     &__about
         margin-top: 50px
-        display: flex
+        display: none
         justify-content: space-between
         align-items: center
         padding: 75px 100px 80px 100px
         min-height: 350px
         background-color: #fff
         box-shadow: 0px 0px 40px rgba(0,0,0,0.15) 
+        &.active
+            display: flex
         &__item
             font-family: "Poppins"
             &:first-child
@@ -304,6 +316,7 @@ header
     background-image: url("../img/statistics/bg.png")
     height: 465px
     padding: 145px 0 125px 0
+    margin-top: 150px
     &__items
         display: flex
         justify-content: space-around
@@ -327,6 +340,7 @@ header
     &__circle
         margin-top: 25px
 .steps
+    background-color: #fff
     height: 1730px
     padding: 150px 0
     &__content
@@ -353,7 +367,7 @@ header
         position: absolute
         top: 50px
         left: 20%
-        z-index: -1
+        z-index: 1
     &__img
         width: 556px
         height: 300px
@@ -419,8 +433,8 @@ header
             font-size: 15px
 .response
     background-color: #3f4049
-    height: 875px
-    padding: 150px 0px
+    min-height: 875px
+    padding: 150px 0px 0px 0px
     &__items
         margin-top: 40px
         height: 399px
@@ -485,6 +499,8 @@ header
 .advantage
     min-height: 1150px
     padding: 145px 0 150px 0
+    margin-top: 150px
+    background-color: #fff;
     &__items
         margin-top: 85px
         display: flex
@@ -672,13 +688,13 @@ header
                     border: 2px solid $red
                     background-color: $red
                     color: white
-.footer
-    height: 1280px
-    background-color: #cccccc
+.contact
+    height: 900px
     padding: 155px 0 130px 0
     &__form
         padding: 0 180px
         margin-top: 80px
+        height: 100%
         font-family: "Poppins"
     &__inputs
         display: flex
@@ -717,9 +733,11 @@ header
         &:hover
             background-color: $red
             color: white
+.footer
+    background-color: #cccccc
+    padding: 100px 0
     &__inf
         margin: 0 auto
-        margin-top: 150px
         width: 100%
         background-color: #3f4049
         height: 225px
